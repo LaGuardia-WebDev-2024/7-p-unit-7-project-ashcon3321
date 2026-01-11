@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
-body {
-  background-color: rgb(37, 150, 190);
-  text-align: center;
-  color: rgb(224, 244, 247);
+/* Polka Dot Background Found at Link Below
+https://codepen.io/poonam-adlakha/pen/PoRJeKM */
+
+
+
+html {
+    background: radial-gradient(#ffcbcb 10%, transparent 10%),                    radial-gradient(#FFFFFF 10%,transparent 10%),
+               radial-gradient(#FFFFFF 10%, transparent 10%) #ea493e;
+    background-size: 100px 100px;
+    background-position: 0 0, 25px 25px, 50px 50px;
+    text-align: center;
 }
 
-#myCanvas {
-  background-image: url("https://img.freepik.com/premium-photo/park-cartoon-image-background-copy-space_1169880-286389.jpg?semt=ais_hybrid&w=740&q=80");
-  background-size: 600px 400px;
-  border-radius: 10px;
-  background-position: center;
-  border: 4px solid rgb(224, 244, 247);;
-}
 
-h1{
-  font-family: "Rubik Dirt", system-ui;
-  font-weight: 400;
-  font-size: 50px;
-  font-style: normal;
+h1, h2{
+  background-color: rgb(255, 255, 255);
+  color: #801616;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 30px;
 }
+"
 
+#myCanvas{
+  border: 5px solid #ffffff;
+}

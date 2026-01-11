@@ -1,38 +1,42 @@
-//🟢Setup Procedure - Runs Once to Set The Canvas
+PImage pyramidImg;
+
+//🎯 Variables
+float sunSize = 30;
+float colorShade = 0;
+float greenshade = 0;
+
+//🟢 Setup
 void setup() {
-    size(600, 400); 
+  size(400, 400);
+  pyramidImg = loadImage("geometrydaddy.png");
 }
 
-//🎯Variable Declarations Go Here
+//🟢 Draw
+void draw() {
+  noStroke();
 
+  // sky
+  background(82 + colorShade, 222 + colorShade, 240 + colorShade);
 
-//🟢Draw Procedure - Runs on Repeat
-draw = function(){
- 
-  background(255,255,255,0);
+  // sun
+  fill(255 + colorShade, 204 + colorShade, 0 + colorShade);
+  ellipse(200, 298, sunSize, sunSize);
 
+  // land
+  fill(76 + greenshade, 168 + greenshade, 67 + greenshade);
+  rect(0, 300, 400, 100);
 
-  
+  // image follows mouse
+  image(pyramidImg, mouseX - 20, mouseY - 20, 120, 120);
 
+  // animation
+  sunSize += 1.5;
+  colorShade -= 1;
+  greenshade -= 0.5;
 
-
-
-
-
-  if(mousePressed){showXYPositions();}
-
-}
-
-//🟡Extra FUN Features Ms. Hall Added
-//Proceed with Caution (and Curiosity!)
-
-showXYPositions = function(){
-    fill(255,255,255,200)
-    rect(470,320,150,100,10)
-    fill(0,0,0)
-    textSize(30)
-    text("x = " + mouseX + "\ny = " +mouseY, 490, 360)
-    fill(255, 255, 255)
-    ellipse(mouseX, mouseY, 10, 10);
-    fill(255,255,255)
+  if (sunSize > 720) {
+    sunSize = 30;
+    colorShade = 0;
+    greenshade = 0;
+  }
 }
