@@ -5,16 +5,18 @@ https://codepen.io/poonam-adlakha/pen/PoRJeKM */
 
 
 html {
-    background: radial-gradient(#ffcbcb 10%, transparent 10%),                    radial-gradient(#FFFFFF 10%,transparent 10%),
-               radial-gradient(#FFFFFF 10%, transparent 10%) #ea493e;
-    background-size: 100px 100px;
-    background-position: 0 0, 25px 25px, 50px 50px;
+    background-image: url("silent\ hill\ background.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     text-align: center;
 }
 
 
 h1, h2{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.8);
   color: #801616;
   width: 400px;
   margin: auto;
