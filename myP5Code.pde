@@ -1,9 +1,9 @@
 PImage pyramidImg;
 
 //🎯 Variable Declarations Go Here
-float sunSize = 30;
-float colorShade = 0;
-float greenshade = 0;
+var sunSize = 30;
+var colorShade = 0;
+var greenshade = 0;
 
 //🟢 Setup - Runs Once to Set The Canvas
 void setup() {
